@@ -12,4 +12,4 @@ Note that `Target`, `Scene role`, and `Function` fields are only filled for toke
 
 In addition, there is a `Sentence_id` field which has a sentence ID unique to the chapter filled in the row containing the first token of the sentence.
 
-The `Transliteration`,`Gloss`, and `Notes` can be ignored as these are just meant to help a reader understand a few examples and are not available for all chapters.
+The `Transliteration`,`Gloss`, and `Notes` fields can be ignored as these are just meant to help a reader understand a few examples and are not available for all chapters.
