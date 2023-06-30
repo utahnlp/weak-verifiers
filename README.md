@@ -27,7 +27,7 @@ To get started with the project, follow the steps mentioned below:
   ```console
   (<venv_name>)foo@bar:weak-verifiers$ pip install gurobipy
   ```
-6. Install [DirectProbe]([url](https://github.com/utahnlp/DirectProbe/tree/main)) and its relevant requirements. The DirectProbe project directory should reside the in the `scripts` folder.
+6. Install [DirectProbe]([https://github.com/utahnlp/DirectProbe/tree/main]) and its relevant requirements. The DirectProbe project directory should reside the in the `scripts` folder.
 
 
 ## Gujarati SNACS Dataset
