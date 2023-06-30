@@ -12,6 +12,6 @@ The annotated data is available under `data/annotated/` where it has been divide
  Citation is to be updated soon.
 
  ## Contact
- Please open an issue if you find trouble running our codebase.
+ Please open an issue if you find trouble running our codebase. <br>
  In case the issue is not acknowledged/addressed within a week, please email at maitrey.mehta@utah.edu
  
