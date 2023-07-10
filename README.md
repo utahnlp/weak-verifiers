@@ -1,5 +1,5 @@
 # weak-verifiers
-This repository contains the data and implementation for the ACL'23 Findings paper: "Verifying Annotation Agreement without Multiple Experts: A Case Study with Gujarati SNACS" 
+This repository contains the data and implementation for the ACL'23 Findings paper: "[Verifying Annotation Agreement without Multiple Experts: A Case Study with Gujarati SNACS](https://aclanthology.org/2023.findings-acl.696/)" 
 
 ## Setup 
 Supported Python Version: 3.6+<br>
