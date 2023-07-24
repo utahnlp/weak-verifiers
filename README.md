@@ -37,7 +37,21 @@ The annotated data is available under `data/annotated/` where it has been divide
 
 
  ## Citation
- Citation is to be updated soon.
+```
+@inproceedings{mehta-srikumar-2023-verifying,
+    title = "Verifying Annotation Agreement without Multiple Experts: A Case Study with {G}ujarati {SNACS}",
+    author = "Mehta, Maitrey  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.696",
+    pages = "10941--10958",
+    abstract = "Good datasets are a foundation of NLP research, and form the basis for training and evaluating models of language use. While creating datasets, the standard practice is to verify the annotation consistency using a committee of human annotators. This norm assumes that multiple annotators are available, which is not the case for highly specialized tasks or low-resource languages. In this paper, we ask: Can we evaluate the quality of a dataset constructed by a single human annotator? To address this question, we propose four weak verifiers to help estimate dataset quality, and outline when each may be employed.We instantiate these strategies for the task of semantic analysis of adpositions in Gujarati, a low-resource language, and show that our weak verifiers concur with a double-annotation study. As an added contribution, we also release the first dataset with semantic annotations in Gujarati along with several model baselines.",
+}
+```
 
  ## Contact
  Please open an issue if you find trouble running our codebase. <br>
