@@ -24,9 +24,6 @@ To get started with the project, follow the steps mentioned below:
   (<venv_name>)foo@bar:weak-verifiers$ pip install -r requirements.txt
   ```
 5. Install gurobipy to run DirectProbe. Install the Gurobi Optimzer (https://support.gurobi.com/hc/en-us/articles/4534161999889-How-do-I-install-Gurobi-Optimizer-). You'll need a Gurobi licence to use the optimizer. If you are in academia, you can obtain one at: https://www.gurobi.com/academia/academic-program-and-licenses/
-  ```console
-  (<venv_name>)foo@bar:weak-verifiers$ pip install gurobipy
-  ```
 6. Install [DirectProbe](https://github.com/utahnlp/DirectProbe/tree/main) and its relevant requirements. The DirectProbe project directory should reside the in the `scripts` folder.
 
 
