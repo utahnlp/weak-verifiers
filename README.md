@@ -1,4 +1,4 @@
-# Weak Verifiers for Annotation Agreement
+<p align="center"><img width="80%" src="logo.jpeg" /></p>
 This repository contains the data and implementation for the ACL'23 Findings paper: "[Verifying Annotation Agreement without Multiple Experts: A Case Study with Gujarati SNACS](https://aclanthology.org/2023.findings-acl.696/)" 
 
 ## Setup 
