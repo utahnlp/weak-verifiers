@@ -1,4 +1,4 @@
-# weak-verifiers
+# Weak Verifiers for Annotation Agreement
 This repository contains the data and implementation for the ACL'23 Findings paper: "[Verifying Annotation Agreement without Multiple Experts: A Case Study with Gujarati SNACS](https://aclanthology.org/2023.findings-acl.696/)" 
 
 ## Setup 
@@ -31,6 +31,10 @@ To get started with the project, follow the steps mentioned below:
 As a part of this paper, we contribute the first semantically annotated dataset in Gujarati which annotates adpositional and case supersenses according to the SNACS schema. Gujarati SNACS contains supersense annotations for all adpositions and case markers present in the freely available Gujarati translation by Dr. Sulbha Natraj of the popular childrens' book _Le Petit Prince_ (The Little Prince) by Antoine de Saint-Exupéry. The translation had to be digitized and is available under `data/nanakdo_rajkumar.txt`.
 
 The annotated data is available under `data/annotated/` where it has been divided into chapter files. Please head on to `data/README.md` for details regarding the format.
+
+
+## Running CRA Experiments
+You can find a short description on how to run CRA experiments in the README.md under the [`scripts` sub-directory](https://github.com/utahnlp/weak-verifiers/blob/main/scripts/README.md). 
 
 
  ## Citation
