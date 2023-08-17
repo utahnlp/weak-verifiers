@@ -25,3 +25,27 @@ The steps are as follows:
     where `ratio` specifies the ratio of the dataset to be shuffled, `tags_file` is the original annotation file created in Step 1 and `save_dir` specifies the directory where the shuffled file will be stored. After running the command, you'll see the shuffled file at `DirectProbe/data/final_dataset/gu_muril-large_SS-SR/100_perc/42/entities/train.txt`. For the sake of computing CRA scores, the ratio should be kept at 1. In order to replicate the trend plots in the paper where we consider different ratios of the dataset, you can change the ratio parameter. We used ratios of 0.05, 0.1, 0.25, 0.5, 0.75, and 1 in our plots. For each ratio, shuffles were created for each of the five seeds mentioned before.
 4. After generating the random shuffle file(s), we can rerun the DirectProbe with a changed config pointing to the shuffled data file. This updated config file will have a change in the `common2` field pointing to the directory containing the shuffled data. We can also update the `output_path` so the results are stored in a different folder. Just to help you, we have provided the [updated config](https://github.com/utahnlp/weak-verifiers/blob/main/scripts/misc/config_shuff.ini) as well. Run DirectProbe with the updated config as shown in Step 2 and find out the number of clusters. Find out the clusters for multiple random seeds and average them. This average will be `C_rand`.
 5. Once you have `C_org` and `C_rand`, CRA score = 1 - (`C_org`/`C_rand`). Unfortunately, the averaging to get `C_rand` and then computing the CRA score needs to be manually done. 
+
+
+
+# Running Baseline Models
+We release scripts to train two kinds of baseline models where i) gold adpositions are provided, and ii) gold adpositions are not provided. To run the training for all the representations mentioned in the paper, you can run:
+```console
+       (<venv_name>)foo@bar: weak-verifiers/scripts/$ sh run_snacs_classifier.sh
+```
+and
+```console
+       (<venv_name>)foo@bar: weak-verifiers/scripts/$ sh run_adpplussnacs_classifier.sh
+```
+respectively. Note that this runs for one single seed. To get the training done for other seeds, you can specific the global variable `SEED` in `adp_classifier.py` and `seq_tagger.py` respectively and re-run the shell script. <br>
+The dev and test metrics for the best model alongside the best model parameters will be stored in the model directory specified with sub-folders created appropriately for the representation, the label set and the seed. <br><br>
+More tweaks are possible for training. These can be passed as command line argumnents. See the [`parse_args` method](https://github.com/utahnlp/weak-verifiers/blob/a177a05820d43d7fe496188cd5a12ca30a13c71a/scripts/seq_tagger.py#L681) in either file for more details.
+
+To evaluate a certain split (train/dev/test) using an existing model on disk, run:
+```console
+       (<venv_name>)foo@bar: weak-verifiers/scripts/$ python adp_classifier.py --model_name <hf_model_name> --label_set <label_set> --mode eval --eval_model_path <path_to_model> --eval_split <split>  
+```
+and
+```console
+       (<venv_name>)foo@bar: weak-verifiers/scripts/$ python seq_tagger.py --model_name <hf_model_name> --label_set <label_set> --mode eval --eval_model_path <path_to_model> --eval_split <split>  
+```
