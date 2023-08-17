@@ -37,6 +37,8 @@ The annotated data is available under `data/annotated/` where it has been divide
 ## Running CRA Experiments
 You can find a short description on how to run CRA experiments in the [README.md](https://github.com/utahnlp/weak-verifiers/blob/main/scripts/README.md) under the `scripts` sub-directory. 
 
+## Running Baseline Models
+You can find steps on how to train and evaluate baseline supersense disambiguation models mentioned in the paper in the [README.md](https://github.com/utahnlp/weak-verifiers/blob/main/scripts/README.md#running-baseline-models) under the `scripts` sub-directory.
 
  ## Citation
 ```
